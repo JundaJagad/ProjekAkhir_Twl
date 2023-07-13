@@ -24,7 +24,7 @@ const Dashboard = () => {
       };
       console.log(token)
   
-      const response = await axios.get('http://localhost:8080/persons', { headers });
+      const response = await axios.get('https://projek-akhir-twl-api.vercel.app/persons', { headers });
       setData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -34,7 +34,7 @@ const Dashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/persons/${id}`);
+      await axios.delete(`https://projek-akhir-twl-api.vercel.app/persons/${id}`);
       console.log(`Delete entry with ID: ${id}`);
       fetchData();
     } catch (error) {
@@ -44,7 +44,7 @@ const Dashboard = () => {
 
   const handleAddPerson = async (newPersonData) => {
     try {
-      await axios.post('http://localhost:8080/persons', newPersonData);
+      await axios.post('https://projek-akhir-twl-api.vercel.app/persons', newPersonData);
       console.log('Person added:', newPersonData);
       fetchData();
     } catch (error) {
@@ -58,7 +58,7 @@ const Dashboard = () => {
 
   const handleUpdate = async (id, updatedPersonData) => {
    try {
-      await axios.put(`http://localhost:8080/persons/${id}`, updatedPersonData);
+      await axios.put(`https://projek-akhir-twl-api.vercel.app/persons/${id}`, updatedPersonData);
       console.log(`Person with ID ${id} updated:`, updatedPersonData);
       setEditId(null);
       fetchData();

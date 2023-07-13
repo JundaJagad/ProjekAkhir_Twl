@@ -16,7 +16,7 @@ const LoginForm = ({ onColorChange }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8080/login', { username, password });
+      const response = await axios.post('https://projek-akhir-twl-api.vercel.app/login', { username, password });
       const { token } = response.data;
 
       // Store the token in localStorage or session storage

@@ -18,7 +18,7 @@ const AddPersonForm = () => {
 
   const handleAddPerson = async () => {
     try {
-      await axios.post('http://localhost:8080/persons', newPerson);
+      await axios.post('https://projek-akhir-twl-api.vercel.app/persons', newPerson);
       console.log('Person added:', newPerson);
       setNewPerson({
         nama: '',
