@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Style untuk body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/daun.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* Mengatur ukuran gambar latar belakang */
+}
+
+/* Style untuk header */
+header {
+  background-color: #856613;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style untuk main content */
+main {
+  display: flex;
+  justify-content: center; /* Menyusun konten di tengah */
+  align-items: center; /* Menyusun konten di tengah */
+  padding: 20px;
+  height: 100vh; /* Menyesuaikan tinggi main content dengan tinggi viewport */
+}
+
+/* Style untuk link navigasi aktif */
+nav ul li a.active {
+  font-weight: bold;
+}
+
+/* Style untuk halaman dashboard, home, about, dan contact */
+.dashboard,
+.home,
+.about,
+.contact {
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center; /* Mengatur konten menjadi di tengah secara horizontal */
+}
+
+.dashboard h2,
+.home h2,
+.about h2,
+.contact h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.dashboard p,
+.home p,
+.about p,
+.contact p {
+  color: #666;
+}

@@ -1,0 +1,38 @@
+/* editpersonform.css
+
+.edit-person-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-person-form-input {
+    width: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .edit-person-form button {
+    padding: 6px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .edit-person-form button[type="submit"] {
+    background-color: #4caf50;
+  }
+  
+  .edit-person-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .edit-person-form button[type="button"] {
+    background-color: #ccc;
+  }
+  
+  .edit-person-form button[type="button"]:hover {
+    background-color: #bbb;
+  }
+   */
