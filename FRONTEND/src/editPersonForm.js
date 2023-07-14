@@ -17,7 +17,7 @@ const EditPersonForm = ({ id, nama, nik, alamat, nomerTelepon, handleUpdate }) =
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:8080/persons/${id}`, formData);
+      await axios.put(`https://projek-akhir-twl-api.vercel.app/persons/${id}`, formData);
       handleUpdate(id, formData);
     } catch (error) {
       console.error('Error updating person data:', error);
