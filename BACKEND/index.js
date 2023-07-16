@@ -3,12 +3,13 @@ const mongoose = require('mongoose');
 const app = express();
 const router = express.Router();
 const isAuthenticated = require('./middleware/authmiddleware')
+const cors = require('cors')
 // const userroute = require('./src/router/userrouter')
 
 const personController = require('./controller/personController');
 const userController = require('./controller/usercontroller');
 // const Person = require('./src/models/personModel');
-
+app.use(cors())
 app.use((req, res, next) => {
    res.header('Access-Control-Allow-Origin', '*');
    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
@@ -18,7 +19,7 @@ app.use((req, res, next) => {
 
 
 // Connect to MongoDB Atlas
-const connectionString = 'mongodb+srv://junda:junda22@cluster0.8v1dorw.mongodb.net/?retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://junda:MyLKs5iMSiccLObr@cluster0.8v1dorw.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true
