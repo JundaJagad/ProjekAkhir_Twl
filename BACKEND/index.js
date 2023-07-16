@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 
 
 // Connect to MongoDB Atlas
-const connectionString = 'mongodb+srv://junda:MyLKs5iMSiccLObr@cluster0.8v1dorw.mongodb.net/?retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://junda:jundayjunday@cluster0.8v1dorw.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true
